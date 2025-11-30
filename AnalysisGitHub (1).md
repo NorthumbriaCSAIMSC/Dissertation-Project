@@ -125,7 +125,7 @@ print("Columns in features_df:", features_df.columns)
 
 
 features_df.to_csv("features_output.csv", index=False, encoding="utf-8-sig")
-print("✅ Features saved to features_output.csv")
+print("Features saved to features_output.csv")
 
 print("\n\n====== AVERAGE SENTIMENT BY MODEL ======")
 print(features_df.groupby("model")["vader_compound"].mean())
